@@ -1,0 +1,13 @@
+.artcilecardbottom {
+    margin-top: 30px;
+}
+
+.artcilecardbottom .line {
+    height: 2px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.artcilecardbottom .taglogo {
+    width: 26px;
+}
