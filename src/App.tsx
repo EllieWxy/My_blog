@@ -1,17 +1,24 @@
 import * as React from 'react';
-import './App.css';
-import Artciles from './modules/Artciles'
-import SideBar from './modules/SideBar'
+import * as ReactDom from 'react-dom'
+import Sidebar from 'modules/SideBar'
+import Artciles from 'modules/Artciles'
+
+import * as style from './App.less'
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-          <SideBar/>
-          <Artciles/>
+      <div className={style.App}>
+        <Sidebar />
+        <Artciles />
       </div>
     );
   }
 }
 
-export default App;
+declare const module: any
+
+if (module.hot) {
+    module.hot.accept()
+}
+ReactDom.render(<App />, document.getElementById('root') as HTMLElement)

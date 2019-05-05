@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './index.css'
+import * as style from './index.less'
 
 interface IAvatarProps {
     image: string
@@ -8,8 +8,8 @@ interface IAvatarProps {
 export default class Avatar extends React.Component<IAvatarProps,any> {
     public render() {
         return <div>
-            <div className="avatar">
-                <img className="image" src={this.props.image}/>
+            <div className={style.avatar}>
+                <img className={style.image} src={this.props.image}/>
             </div>
         </div>
     }

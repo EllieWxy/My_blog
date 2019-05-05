@@ -1,13 +1,16 @@
 import * as React from 'react'
-import './index.css'
+import * as style from './index.less'
 
 import taglogo from '../../../../source/tag.png'
+import tags from '../../../../source/tag.svg'
 
 export default class ArtcileCardBottom extends React.Component<any,any> {
     public render(){
-        return <div className='artcilecardbottom'>
-            <div className='line'/>
-            <img className='taglogo' src={taglogo}/>
+        return <div className={style.artcilecardbottom}>
+            <div className={style.line}/>
+            <img className={style.taglogo} src={taglogo}/>
+            <img className={style.tags} src={tags}/>
+        <a className={style.fullUrl} href="www.baidu.com">展开全文</a>
         </div>
     }
 }
