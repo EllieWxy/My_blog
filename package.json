@@ -10,7 +10,9 @@
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "webpack-dev-server --open"
+  },
   "devDependencies": {
     "@types/react": "^16.8.15",
     "@types/react-dom": "^16.8.4",

@@ -6,7 +6,6 @@ export default class Artciles extends React.Component<any,any> {
     public render() {
         return <div className={style.articles}>
                 <ArtcileCard/>
-                <ArtcileCard/>
             </div>
     }
 }
