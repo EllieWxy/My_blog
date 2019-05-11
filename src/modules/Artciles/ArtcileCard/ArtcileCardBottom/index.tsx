@@ -1,11 +1,11 @@
 import * as React from 'react'
+import taglogo from 'images/tag.png'
+import tags from 'images/tagtext.svg'
+
 import * as style from './index.less'
 
-import taglogo from '../../../../source/tag.png'
-import tags from '../../../../source/tagtext.svg'
-
 export default class ArtcileCardBottom extends React.Component<any,any> {
-    public render(){
+    render(){
         return <div className={style.artcilecardbottom}>
             <div className={style.line}/>
             <img className={style.taglogo} src={taglogo}/>

@@ -6,7 +6,7 @@ interface IAvatarProps {
 }
 
 export default class Avatar extends React.Component<IAvatarProps,any> {
-    public render() {
+    render() {
         return <div>
             <div className={style.avatar}>
                 <img className={style.image} src={this.props.image}/>
