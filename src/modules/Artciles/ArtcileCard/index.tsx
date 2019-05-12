@@ -1,26 +1,25 @@
 import * as React from 'react'
-import * as style from './index.less'
-
-import artcilepic from '../../../source/artcilepic.jpg';
-
+import artcilepic from 'images/artcilepic.jpg';
 import ArtcileCardBottom from './ArtcileCardBottom'
+
+import * as style from './index.less'
 
 interface ISArtcileMore {
     ismore: boolean
 }
 
 export default class ArtcileCard extends React.Component<any, ISArtcileMore> {
-    public state = {
+    state = {
         ismore: true
     }
 
-    public change() {
+    change() {
         this.setState({
             ismore: !this.state.ismore
         })
     }
 
-    public render() {
+    render() {
         if (!this.state.ismore) {
             return <div className={style.artcilecard}>
                 <div className={style.lefttop}/>

@@ -6,7 +6,7 @@ import Artciles from 'modules/Artciles'
 import * as style from './App.less'
 
 class App extends React.Component {
-  public render() {
+  render() {
     return (
       <div className={style.App}>
         <Sidebar />

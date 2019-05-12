@@ -2,18 +2,18 @@ import * as React from 'react'
 import Avatar from './Avatar'
 import * as style from './index.less'
 
-import icon from '../../source/icon.jpg';
+import icon from 'images/icon.jpg';
 
 interface ISidebarState {
     collapsed: boolean
 }
 
 export default class SideBar extends React.Component<any, ISidebarState> {
-    public state = {
+    state = {
         collapsed: false
     }
 
-    public render() {
+    render() {
         if (this.state.collapsed) {
             return null
         }
