@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom'
 import Sidebar from 'modules/SideBar'
-import Artciles from 'modules/Artciles'
+import Articles from 'modules/Articles'
 
 import * as style from './App.less'
 
@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div className={style.App}>
         <Sidebar />
-        <Artciles />
+        <Articles />
       </div>
     );
   }
