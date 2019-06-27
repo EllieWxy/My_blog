@@ -4,16 +4,24 @@ import tags from 'images/tagText.svg'
 
 import * as style from './index.less'
 
-export default class ArticleCardBottom extends React.Component<any,any> {
-    render(){
+interface Itags {
+    tags: String[]
+}
+
+export default class ArticleCardBottom extends React.Component<Itags, any> {
+
+    render() {
         return <div className={style.articleCardBottom}>
             <div className={style.line}/>
             <img className={style.tagLogo} src={tagLogo}/>
-            <div className={style.tags}>
-                <img className={style.tagsImg} src={tags}/>
-                <div className={style.tagsText}>诗歌</div>
-            </div>
-        <button className={style.changeFull}>展开全文</button>
+            {this.props.tags.map(item => {
+                return <div className={style.tags}>
+                    <img className={style.tagsImg} src={tags}/>
+                    <div className={style.tagsText}>{item}</div>
+                </div>
+            })
+            }
+            <button className={style.changeFull}>展开全文</button>
         </div>
     }
 }

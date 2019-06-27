@@ -11,7 +11,7 @@ module.exports = {
     module: {
         // 关于模块配置
         rules: [{
-            test: /\.tsx$/,
+            test: /\.(tsx|ts)$/,
             include: [
                 path.resolve(__dirname, "src")
             ],
@@ -37,7 +37,8 @@ module.exports = {
         alias: {
             "components": path.resolve(__dirname, 'src/components'),
             "modules": path.resolve(__dirname, 'src/modules'),
-            "image": path.resolve(__dirname, 'src/images')
+            "image": path.resolve(__dirname, 'src/images'),
+            "api":path.resolve(__dirname,'src/apis')
         },
     },
     devtool: "source-map",
